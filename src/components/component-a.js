@@ -3,8 +3,15 @@ import * as React from "react"
 import "./component-a.css"
 import {depA} from "../utils/depa";
 
+import {Provider, defaultTheme} from '@adobe/react-spectrum';
+
 export default function ComponentA() {
-    return <div id="test" onClick={() => {
-        depA()
-    }}>ComponentA</div>
+    return <Provider
+        theme={defaultTheme}
+    >
+        <div id="test" onClick={() => {
+            depA()
+        }}>ComponentA
+        </div>
+    </Provider>
 }

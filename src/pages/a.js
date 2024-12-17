@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import {Provider, defaultTheme} from '@adobe/react-spectrum';
+// import {Provider, defaultTheme} from '@adobe/react-spectrum';
 
 import "./a.css"
 // import {depA} from "../utils/depa";
@@ -11,12 +11,12 @@ const ComponentA = React.lazy(() => import("../components/component-a"));
 
 const IndexPage = () => {
     return (
-        <Provider
-            theme={defaultTheme}
-            // scale='medium'
-            // typekitId={typekitId}
-            // className={rootClassName}
-        >
+        // <Provider
+        //     theme={defaultTheme}
+        //     // scale='medium'
+        //     // typekitId={typekitId}
+        //     // className={rootClassName}
+        // >
             <main>
                 <h1>
                     APage
@@ -25,7 +25,7 @@ const IndexPage = () => {
                     <ComponentA/>
                 </React.Suspense>}
             </main>
-        </Provider>
+        // </Provider>
     )
 }
 
