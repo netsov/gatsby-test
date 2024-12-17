@@ -21,7 +21,7 @@ const IndexPage = () => {
                 <h1>
                     APage
                 </h1>
-                {typeof window !== 'undefined' && <React.Suspense fallback={<div>Loading...</div>}>
+                {typeof window !== 'undefined' && <React.Suspense fallback={<div>Loading chunk...</div>}>
                     <ComponentA/>
                 </React.Suspense>}
             </main>

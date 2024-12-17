@@ -6,5 +6,7 @@ module.exports = {
     title: `gatsby-test`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-split-css'
+  ],
 }

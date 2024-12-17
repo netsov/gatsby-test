@@ -23,5 +23,5 @@ export default function ComponentA() {
         }}>
             ComponentA
         </div>
-    </reactSpectrum.Provider>: 'loading'
+    </reactSpectrum.Provider>: <span>Loading spectrum...</span>
 }
